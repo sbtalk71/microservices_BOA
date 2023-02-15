@@ -1,0 +1,32 @@
+2023-02-15 09:53:34,992 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-02-15 09:56:03,244 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.demo:config-server:1.0 @ C:\Users\Admin\Documents\GitHub\microservices_BOA\config-server\pom.xml.
+2023-02-15 09:56:05,921 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.demo:dept-data-service:1.0 @ C:\Users\Admin\Documents\GitHub\microservices_BOA\dept-data-service\pom.xml.
+2023-02-15 09:56:07,879 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.demo:emp-data-service:1.0 @ C:\Users\Admin\Documents\GitHub\microservices_BOA\emp-data-service\pom.xml.
+2023-02-15 09:56:08,021 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.demo:eureka-server:1.0 @ C:\Users\Admin\Documents\GitHub\microservices_BOA\eureka-server\pom.xml.
+2023-02-15 09:56:08,330 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.demo:hr-service:1.0 @ C:\Users\Admin\Documents\GitHub\microservices_BOA\hr-service\pom.xml.
+2023-02-15 09:56:08,419 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.demo:spring-boot-app:0.0.1-SNAPSHOT @ C:\Users\Admin\Documents\GitHub\microservices_BOA\spring-boot-app\pom.xml.
+2023-02-15 09:56:16,271 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /emp-data-service/src/main/java
+2023-02-15 09:56:16,272 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /emp-data-service/src/main/resources
+2023-02-15 09:56:16,272 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /emp-data-service/src/main/resources
+2023-02-15 09:56:16,273 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /emp-data-service/src/test/java
+2023-02-15 09:56:16,848 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /eureka-server/src/main/java
+2023-02-15 09:56:16,849 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /eureka-server/src/main/resources
+2023-02-15 09:56:16,849 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /eureka-server/src/main/resources
+2023-02-15 09:56:16,849 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /eureka-server/src/test/java
+2023-02-15 09:56:17,216 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /hr-service/src/main/java
+2023-02-15 09:56:17,216 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /hr-service/src/main/resources
+2023-02-15 09:56:17,216 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /hr-service/src/main/resources
+2023-02-15 09:56:17,217 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /hr-service/src/test/java
+2023-02-15 09:56:17,536 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dept-data-service/src/main/java
+2023-02-15 09:56:17,537 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /dept-data-service/src/main/resources
+2023-02-15 09:56:17,537 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /dept-data-service/src/main/resources
+2023-02-15 09:56:17,538 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dept-data-service/src/test/java
+2023-02-15 09:56:17,938 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /config-server/src/main/java
+2023-02-15 09:56:17,938 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /config-server/src/main/resources
+2023-02-15 09:56:17,938 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /config-server/src/main/resources
+2023-02-15 09:56:17,939 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /config-server/src/test/java
+2023-02-15 09:56:18,219 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring-boot-app/src/main/java
+2023-02-15 09:56:18,219 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /spring-boot-app/src/main/resources
+2023-02-15 09:56:18,220 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /spring-boot-app/src/main/resources
+2023-02-15 09:56:18,220 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring-boot-app/src/test/java
+2023-02-15 09:56:18,371 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 6 project(s) in 21 sec
