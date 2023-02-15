@@ -19,6 +19,8 @@ import org.springframework.web.client.RestTemplate;
 import com.demo.spring.entity.Dept;
 import com.demo.spring.entity.Emp;
 
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+
 @RestController
 @RequestMapping("hr")
 public class HrRestController {
@@ -52,7 +54,9 @@ public class HrRestController {
 	}
 	
 	@GetMapping(path="{dno}/emplist",produces = MediaType.APPLICATION_JSON_VALUE)
+	@CircuitBreaker(name = "appBackend",fallbackMethod = "fallbackFindEmpInDept")
 	public ResponseEntity findEmpInDept(@PathVariable("dno") int deptNo) {
+		System.out.println("inside the method findEmpInDept");
 		ResponseEntity<Dept> deptResponse=restTemplate.exchange("http://dept-service/dept/find/"+deptNo, HttpMethod.GET, null, Dept.class);
 		Dept dept=deptResponse.getBody();
 		
@@ -63,6 +67,9 @@ public class HrRestController {
 		
 		return ResponseEntity.ok(dept);
 		
-		
+	}
+	
+	public ResponseEntity fallbackFindEmpInDept(int deptNo,Exception ex) {
+		return ResponseEntity.ok("Service is down, please try after some time..");
 	}
 }

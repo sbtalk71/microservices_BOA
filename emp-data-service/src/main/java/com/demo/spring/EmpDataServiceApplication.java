@@ -19,8 +19,8 @@ public class EmpDataServiceApplication {
 	}
 
 
-	@Bean
-	@ConfigurationProperties(prefix = "app.datasource")
+	//@Bean
+	//@ConfigurationProperties(prefix = "app.datasource")
 	//@Profile("testing")
 	public HikariDataSource dataSource() {
 		return DataSourceBuilder.create().type(HikariDataSource.class).build();
