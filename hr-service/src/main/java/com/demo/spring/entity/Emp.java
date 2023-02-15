@@ -1,29 +1,16 @@
 package com.demo.spring.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.xml.bind.annotation.XmlRootElement;
-
-@Entity
-@Table(name="MYEMP")
-@XmlRootElement
 public class Emp {
-	@Id
-	@Column(name="EMPNO")
+	
 	private Integer empId;
 	
 	private String name;
 	
-	@Column(name="ADDRESS")
+	
 	private String city;
 	
 	private Double salary;
 
-	@Column(name="DNO")
-	private Integer deptNo;
-	
 	public Emp() {
 	}
 
@@ -64,14 +51,6 @@ public class Emp {
 
 	public void setSalary(Double salary) {
 		this.salary = salary;
-	}
-
-	public Integer getDeptNo() {
-		return deptNo;
-	}
-
-	public void setDeptNo(Integer deptNo) {
-		this.deptNo = deptNo;
 	}
 
 }

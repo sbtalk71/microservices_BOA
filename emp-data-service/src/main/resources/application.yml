@@ -5,9 +5,26 @@ server:
 spring:
   application:
     name: emp-service
+
+#  config:
+#    import: optional:configserver:http://localhost:8888/
     
-  datasource:
+    
+#  datasource:
+#    driver-class-name: org.mariadb.jdbc.Driver
+#    url: jdbc:mariadb://localhost:3306/training
+#    username: root
+#    password: root 
+    
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+app:
+   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://localhost:3306/training
+    jdbc-url: jdbc:mariadb://localhost:3306/training
     username: root
     password: root 
