@@ -20,6 +20,7 @@ import com.demo.spring.entity.Dept;
 import com.demo.spring.entity.Emp;
 
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import io.micrometer.core.annotation.Timed;
 
 @RestController
 @RequestMapping("hr")
@@ -29,6 +30,7 @@ public class HrRestController {
 	RestTemplate restTemplate;
 	
 	@GetMapping(path="emp_details",produces = MediaType.APPLICATION_JSON_VALUE)
+	@Timed(value = "hr.getEmpDetails")
 	public ResponseEntity getEmpDetails(@RequestParam(name="empId",required = true) int id) {
 		
 		HttpHeaders headers= new HttpHeaders();
@@ -41,6 +43,7 @@ public class HrRestController {
 	}
 	
 	@GetMapping(path="emplist",produces = MediaType.APPLICATION_JSON_VALUE)
+	@Timed(value = "hr.empList")
 	public ResponseEntity empList() {
 		
 		HttpHeaders headers= new HttpHeaders();
@@ -55,6 +58,7 @@ public class HrRestController {
 	
 	@GetMapping(path="{dno}/emplist",produces = MediaType.APPLICATION_JSON_VALUE)
 	@CircuitBreaker(name = "appBackend",fallbackMethod = "fallbackFindEmpInDept")
+	@Timed(value = "hr.findEmpInDept")
 	public ResponseEntity findEmpInDept(@PathVariable("dno") int deptNo) {
 		System.out.println("inside the method findEmpInDept");
 		ResponseEntity<Dept> deptResponse=restTemplate.exchange("http://dept-service/dept/find/"+deptNo, HttpMethod.GET, null, Dept.class);

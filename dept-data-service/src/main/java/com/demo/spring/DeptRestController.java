@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.demo.spring.entity.Dept;
 import com.demo.spring.entity.DeptRepository;
 
+import io.micrometer.core.annotation.Timed;
+
 @RestController
 @RequestMapping("dept")
 public class DeptRestController {
@@ -20,6 +22,7 @@ public class DeptRestController {
 	DeptRepository deptRepository;
 
 	@GetMapping(path="find/{dno}",produces = "application/json")
+	@Timed(value = "dept.findDept")
 	public ResponseEntity findDept(@PathVariable("dno") int id) {
 		
 		Optional<Dept> deptOp=deptRepository.findById(id);
